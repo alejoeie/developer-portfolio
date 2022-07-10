@@ -1,0 +1,83 @@
+.header-comp {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    padding: 1rem;
+    padding-top: 2rem;
+
+  @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+  }
+}
+
+.alejandro{
+    font-size: 4rem;
+}
+
+.logo-section {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    @media screen and (max-width: 640px) {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+}
+
+.items {
+    grid-area: 1 / 2 / 2 / 4;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 60px;
+    justify-content: space-around;
+    @media screen and (max-width: 640px) {
+      grid-area: 2 / 2 / 3 / 5;
+    }
+}
+.items-a{
+    font-size: 2rem;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.75);
+    transition: 0.4s ease;
+    @media screen and (max-width: 640px) {
+      padding: 0.5rem;
+    }
+}
+
+.items-a:hover {
+    color: rgb(27, 90, 95);
+    opacity: 1;
+    cursor: pointer;
+  }
+
+.social-media{
+    grid-area: 1 / 5 / 2 / 6;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (max-width: 640px) {
+      align-items: center;
+      grid-area: 1 / 4 / 2 / 6;
+    }
+}
+
+.social-icon{
+    transition: 0.3s ease;
+color: white;
+border-radius: 50px;
+  padding: 8px;
+
+}
+
+.social-icon:hover {
+    background-color: #212d45;
+    transform: scale(1.2);
+    cursor: pointer;
+    
+  }
