@@ -1,7 +1,5 @@
 import './App.css';
 import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
-import {Routes, Route} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Body from './components/Body/Body';
 import Projects from './components/Projects/Projects';
