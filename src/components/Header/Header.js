@@ -20,7 +20,7 @@ function Header() {
                 <a className='items-a' href='/'>Projects.</a>
             </li>
             <li>
-                <a className='items-a' href='/'>Contact Me.</a>
+                <a className='items-a' href='/contact'>Contact Me.</a>
             </li>
         </div>
 
